@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The payment list layout -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/tableLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/list_item_cell_separator_layout" />
+
+            <TextView
+                android:id="@+id/list_name_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:text="@string/bike_name"
+                android:textAlignment="center" />
+
+            <View style="@style/list_item_cell_separator_layout" />
+
+            <TextView
+                android:id="@+id/list_duration_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:text="@string/ride_duration"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <View style="@style/list_item_cell_separator_layout" />
+
+            <TextView
+                android:id="@+id/list_price_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="@string/price"
+                android:textAlignment="center" />
+
+            <View style="@style/list_item_cell_separator_layout" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        style="@style/list_item_separator_layout"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout4" />
+</android.support.constraint.ConstraintLayout>

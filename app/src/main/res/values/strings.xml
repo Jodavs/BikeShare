@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BikeShareAssignment2</string>
+    <string name="add_tokens">Add Tokens</string>
+    <string name="_0">0</string>
+    <string name="tokens">Tokens</string>
+    <string name="user_name">User Name</string>
+    <string name="bike_image">Bike Image</string>
+    <string name="ride_end_location">Ride End Location</string>
+    <string name="active_rides">Active Rides:</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="find_bike">Find Bike</string>
+    <string name="end_ride">End Ride</string>
+    <string name="check_bike">Check bike</string>
+    <string name="logout">Logout</string>
+    <string name="bike_name">Bike name</string>
+    <string name="bike_type">Bike type</string>
+    <string name="register_bike">Register Bike</string>
+    <string name="bike_rent_price_pr_hour">Bike Rent Price (pr. hour)</string>
+    <string name="bike_location">Bike Location</string>
+    <string name="ride_start_location">Ride Start Location</string>
+    <string name="rent_now_for_12_5_dkk">Rent Now For 12.5 DKK</string>
+    <string name="are_you_sure_your_want_to_delete">Are you sure your want to delete:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="status">Status</string>
+    <string name="ride_duration">Ride Duration</string>
+    <string name="bike">Bike</string>
+    <string name="start_location">Start Location</string>
+    <string name="start_time">Start Time:</string>
+    <string name="end_location">End Location</string>
+    <string name="end_time">End Time:</string>
+    <string name="time">Time</string>
+    <string name="price">Price</string>
+    <string name="_0_ddk">0 DDk</string>
+    <string-array name="rent_price">
+        <item>30 minutes</item>
+        <item>2 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
+</resources>

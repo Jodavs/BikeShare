@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The landscape version of the main screen -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/register_bike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Register Bike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/check_bike"
+            app:layout_constraintTop_toBottomOf="@+id/end_ride" />
+
+        <Button
+            android:id="@+id/find_bike"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Find Bike"
+            app:layout_constraintEnd_toStartOf="@+id/end_ride"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/end_ride"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="End Ride"
+            app:layout_constraintBottom_toTopOf="@+id/register_bike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/find_bike"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/check_bike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="64dp"
+            android:text="Check bike"
+            app:layout_constraintEnd_toStartOf="@+id/register_bike"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/find_bike" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/colorAccent"
+            android:text="Logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_main"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/main_layout"
+        app:layout_constraintEnd_toStartOf="@+id/main_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_layout"
+        app:layout_constraintTop_toBottomOf="@+id/main_layout" />
+
+</android.support.constraint.ConstraintLayout>
